@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<BioKit>
+	<Mappings>
+		<Row parameter="P 1" source="Pulses/Row:nucleus=1H:pulseLength"/>
+		<Row parameter="O1" source="Offsets/Row:nucleus=H:ohz"/>
+        	<Row parameter="SPdB 1" source="Shapes/Row:nucleus=90deg. water:powerLevelDB"/>
+		<Row parameter="D 23" value="0.0088"/>
+		<Row parameter="2 SW" source="SpectralWidth/Row:nucleus=H:sw"/>
+		<Row parameter="1 SW" value="40"/>
+		<Row parameter="O2P" value="125"/>
+		<Row parameter="O3P" value="130"/>
+                <Row parameter="1 AQ" value="0.0152"/>
+	</Mappings>
+	<UserEdit>
+		<Row parameter="NS"/>
+	</UserEdit>
+	<preAQ/>
+</BioKit>

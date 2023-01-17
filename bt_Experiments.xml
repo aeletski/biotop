@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<Experiments>
+	<user0 alias="NAN">
+		<user00 alias="Protein">
+			<user000 alias="1D"/>
+			<user001 alias="2D">
+				<Experiment Pulprog="hsqcetfpf3gpsi2.nan" RequireLabeling="13C/15N;15N;13C/15N/2H" desc="15N HSQC with sensitivity improvement and gradient coherence selection" name="2D 15N HSQC" parset="HSQC_15N.par"/>
+				<Experiment Pulprog="hsqcctetgpsisp_ali.nan" RequireLabeling="13C/15N;13C" desc="Aliphatic CT-HSQC" name="2D 13C CT-HSQC ali" parset="HSQC_CT_13C_ALI.par"/>
+				<Experiment Pulprog="hsqcctetfpgpsi_aro.nan" RequireLabeling="13C/15N;13C" desc="Aromatic CT-HSQC" name="2D 13C CT-HSQC aro" parset="HSQC_CT_13C_ALI.par"/>
+			</user001>
+			<user002 alias="Backbone assignment"/>
+			<user003 alias="Side-Chain Assignment">
+				<Experiment Pulprog="hcchflgp3d2.nan" RequireLabeling="13C/15N;13C" desc="(H)CCH-TOCSY aliphatic with FLOPSY-16 mixing" name="3D (H)CCH-TOCSY ali" parset="hCCH_TOCSY_FLOPSY_3D.par"/>
+				<Experiment Pulprog="hcchcoctgp3d2_ali.nan" RequireLabeling="13C/15N;13C" desc="(H)CCH-COSY aliphatic, semi-CT in both 13C dimensions" name="3D (H)CCH-COSY ali" parset="hCCH_COSY_ALI_3D.par"/>
+				<Experiment Pulprog="hcchcoctgp3d2_aro.nan" RequireLabeling="13C/15N;13C" desc="(H)CCH-COSY aromatic, with semi-CT in 13C dimensions" name="3D (H)CCH-COSY aro" parset="hCCH_COSY_ARO_3D.par"/>
+			</user003>
+			<user004 alias="Distance restraints">
+				<Experiment Pulprog="noesyhsqcfpf3gpsi3d.nan" RequireLabeling="13C/15N;15N;13C/15N/2H" desc="15N NOESY-HSQC with PEP and flip-back" name="3D 15N NOESY-HSQC E/A FB" parset="NOESYHSQC_15N_3D.par"/>
+				<Experiment Pulprog="noesyhsqcetgpsi3d.nan" RequireLabeling="13C/15N;13C" desc="13C-edited NOESY-HSQC with PEP, aliphatic" name="3D 13Cali NOESY-HSQC" parset="NOESYHSQC_13C_ALI_3D.par"/>
+				<Experiment Pulprog="noesyhsqcfpgpsi3d_aro.nan" RequireLabeling="13C/15N;13C" desc="13C-edited NOESY-HSQC with PEP and FB, aromatic" name="3D 13Caro NOESY-HSQC" parset="NOESYHSQC_13C_ARO_3D.par"/>
+			</user004>
+			<user005 alias="Coupling restraints"/>
+			<user006 alias="Relaxation"/>
+			<user007 alias="Carbon detected"/>
+			<user008 alias="Nitrogen detected"/>
+		</user00>
+	</user0>
+</Experiments>

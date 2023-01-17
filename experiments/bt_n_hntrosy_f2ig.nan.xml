@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<BioKit>
+	<Mappings>
+		<Row parameter="O3" source="Offsets/Row:nucleus=H:ohz"/>
+		<Row parameter="1 SW" source="SpectralWidth/Row:nucleus=HN:sw"/>
+		<Row parameter="CNST 4" value="105"/>
+		<Row parameter="O2P" value="110"/>
+		<Row parameter="O1P" source="Offsets/Row:nucleus=N:oppm"/>
+		<Row parameter="CNST 19" source="Offsets/Row:nucleus=HN:oppm"/>
+	</Mappings>
+	<UserEdit>
+		<Row parameter="NS"/>
+		<Row desc="-DLABEL_CN for CA/CO decoupling" parameter="ZGOPTNS"/>
+	</UserEdit>
+	<preAQ>
+		<Row cmd="wvm -a"/>
+	</preAQ>
+</BioKit>

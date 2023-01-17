@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<BioKit>
+	<Mappings>
+		<Row parameter="P 1" source="Pulses/Row:nucleus=1H:pulseLength"/>
+		<Row parameter="CNST 21" source="Offsets/Row:nucleus=CO:oppm"/>
+		<Row parameter="O1" source="Offsets/Row:nucleus=H:ohz"/>
+		<Row parameter="1 SW" source="SpectralWidth/Row:nucleus=Cali:sw"/>
+		<Row parameter="2 SW" value="26.7"/>
+		<Row parameter="3 SW" source="SpectralWidth/Row:nucleus=H:sw"/>
+		<Row parameter="O2P" source="Offsets/Row:nucleus=Cali:oppm"/>
+		<Row parameter="O3P" source="Offsets/Row:nucleus=N:oppm"/>
+                <Row parameter="1 AQ" value="0.010"/>
+                <Row parameter="2 AQ" value="0.010"/>
+	</Mappings>
+	<UserEdit>
+		<Row parameter="NS"/>
+	</UserEdit>
+	<preAQ>
+		<Row pycode="PUTPAR('L 1', str(int(round(14000/(float(GETPAR('P 9'))*188.448)))))"/>
+	</preAQ>
+</BioKit>
